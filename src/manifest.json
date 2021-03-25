@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Step 1: Find the correct Library ID",
+      "identifier": "sketch-71-library-fix.step-one",
+      "script": "./my-command.js",
+      "handler": "getLibraryID"
+    },
+    {
+      "name": "Step 2: Apply correct ID to Library",
+      "identifier": "sketch-71-library-fix.step-two",
+      "script": "./my-command.js",
+      "handler": "injectLibraryID"
+    }
+  ],
+  "menu": {
+    "title": "Sketch 71 Library Fix",
+    "items": [
+      "sketch-71-library-fix.step-one",
+      "sketch-71-library-fix.step-two"
+    ]
+  }
+}
