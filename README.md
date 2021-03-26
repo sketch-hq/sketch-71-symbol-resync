@@ -8,7 +8,7 @@ This plugin restores the correct ID for Cloud Libraries opened in Sketch 71.0. Y
 2. Open the faulty document directly from Cloud, select a Symbol Instance, and choose 'Plugins › Sketch 71 Symbol Resync › Step 1'. Close the document.
 3. Now locate the source Library on Cloud, and download it to your computer using the ... menu that appears when you hover over the document preview on Cloud (choose 'Download Document')
 4. Open the local copy of your Library you just downloaded, and choose 'Plugins › Sketch 71 Symbol Resync › Step 2'
-5. Save the document, and push the changes back to Cloud by clicking the 'Collaborate' icon in Sketch's toolbar, and then 'Update Document…'
+5. Push the changes back to Cloud by clicking the 'Collaborate' icon in Sketch's toolbar, and then 'Update Document…'
 6. Delete the local Library document, open Sketch › Preferences › Libraries and redownload the Library you updated
 7. Finally, open the faulty document and make sure all the Components are now showing the right source in the Inspector
 
