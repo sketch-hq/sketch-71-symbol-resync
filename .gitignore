@@ -1,10 +1,11 @@
 # build artifacts
-sketch-71-library-fix.sketchplugin
+sketch-71-symbol-resync.sketchplugin
 
 # npm
 node_modules
 .npm
 npm-debug.log
+package-lock.json
 
 # mac
 .DS_Store
