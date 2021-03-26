@@ -31,7 +31,7 @@ export function getLibraryID() {
         break
     }
     if (success) {
-      sketch.UI.alert('Library ID copied to clipboard', `We’ve found the correct ID for your Source Library.\nNow run Step 2.`)
+      sketch.UI.alert('Library ID copied to clipboard', `We’ve found the correct ID for your Source Library.\nNow close this document and run Step 2.`)
     } else {
       sketch.UI.alert('No Library ID found', `We couldn’t find a correct ID in this document. Make sure you selected a Component or Layer with a shared Style, then run the plugin again.`)
     }
@@ -44,7 +44,8 @@ export function injectLibraryID(){
     let doc = sketch.getSelectedDocument()
     if (doc.id != correctID) {
       doc._object.documentData().setObjectID(correctID)
-      sketch.UI.alert('Replacing Library ID…', `Now save your Library to update your Workspace.\n\nAll done!`)
+      doc.save()
+      sketch.UI.alert('Replacing Library ID…', `Now you can click the Collaborate toolbar icon to push the changes back to your Workspace.`)
     } else {
       sketch.UI.alert('Correct ID already in Library', `It looks like this Library already has the correct ID.\n\nYou don’t need to do anything else.`)
     }
