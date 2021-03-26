@@ -4,22 +4,22 @@
   "commands": [
     {
       "name": "Step 1: Find the correct Library ID",
-      "identifier": "sketch-71-library-fix.step-one",
+      "identifier": "sketch-71-symbol-resync.step-one",
       "script": "./my-command.js",
       "handler": "getLibraryID"
     },
     {
       "name": "Step 2: Apply correct ID to Library",
-      "identifier": "sketch-71-library-fix.step-two",
+      "identifier": "sketch-71-symbol-resync.step-two",
       "script": "./my-command.js",
       "handler": "injectLibraryID"
     }
   ],
   "menu": {
-    "title": "Sketch 71 Library Fix",
+    "title": "Sketch 71 Symbol Resync",
     "items": [
-      "sketch-71-library-fix.step-one",
-      "sketch-71-library-fix.step-two"
+      "sketch-71-symbol-resync.step-one",
+      "sketch-71-symbol-resync.step-two"
     ]
   }
 }

@@ -1,14 +1,14 @@
 {
-  "name": "sketch-71-library-fix",
+  "name": "sketch-71-symbol-resync",
   "version": "1.0.0",
   "engines": {
     "sketch": ">=49.0"
   },
   "skpm": {
-    "name": "Sketch 71 Library Fix",
+    "name": "Sketch 71 Symbol Resync",
     "description": "Fixes a missing Library ID issue in Sketch 71",
     "manifest": "src/manifest.json",
-    "main": "sketch-71-library-fix.sketchplugin",
+    "main": "sketch-71-symbol-resync.sketchplugin",
     "assets": [
       "assets/**/*"
     ],
@@ -24,5 +24,5 @@
     "@skpm/builder": "^0.7.0"
   },
   "author": "Sketch <developer@sketch.com>",
-  "repository": "https://github.com/sketch-hq/sketch-71-library-fix.git"
+  "repository": "https://github.com/sketch-hq/sketch-71-symbol-resync.git"
 }
